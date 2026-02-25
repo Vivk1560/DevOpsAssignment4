@@ -9,15 +9,9 @@ pipeline {
             }
         }
 
-        stage('Install') {
-            steps {
-                sh 'npm install'
-            }
-        }
-
         stage('Run Application') {
             steps {
-                sh 'npm start'
+                sh 'node app.js'
             }
         }
     }
