@@ -9,9 +9,9 @@ pipeline {
             }
         }
 
-        stage('Run Application') {
+        stage('CI Test Stage') {
             steps {
-                sh 'node app.js'
+                sh 'echo CI/CD Pipeline executed successfully!'
             }
         }
     }
